@@ -6,6 +6,7 @@
 //
 
 import Core
+import Leaf
 import Service
 import TemplateKit
 import Vapor
@@ -21,6 +22,9 @@ public final class VaporFormsProvider: Provider {
         let router = EngineRouter.default()
         try routes(router)
         services.register(router, as: Router.self)
+
+        try services.register(LeafProvider())
+//        services.prefer(LeafRenderer.self, for: ViewRenderer.self)
     }
 
     /// See Service.Provider.boot

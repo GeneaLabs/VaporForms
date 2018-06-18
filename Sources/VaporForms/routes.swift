@@ -6,6 +6,7 @@
 //
 
 import Vapor
+import Leaf
 
 public func routes(_ router: Router) throws {
     let exampleController = ExampleController()
