@@ -26,7 +26,6 @@ public final class VaporFormsProvider: Provider {
         var tags = LeafTagConfig.default()
         tags.use(FormTag(), as: "Form")
         tags.use(EndFormTag(), as: "EndForm")
-
         services.register(tags)
     }
 
