@@ -12,6 +12,6 @@ final class ExampleController {
     func index(_ request: Request) throws -> Future<View> {
         let leaf:ViewRenderer = try request.make(LeafRenderer.self)
 
-        return leaf.render("../Vanilla/index")
+        return leaf.render("../../Dependencies/Vanilla/index")
     }
 }
