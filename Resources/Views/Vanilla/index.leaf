@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tilte>Test page</title>
+    </head>
+    <body>
+        #Form
+            inside form
+        #EndForm
+    </body>
+</html>
