@@ -9,6 +9,8 @@ import Async
 import Leaf
 
 public final class FormTag: TagRenderer {
+    public init() {}
+
     public func render(tag: TagContext) throws -> EventLoopFuture<TemplateData> {
         var paramters = tag.context.data.dictionary ?? [:]
         var html = "<form>"

@@ -23,8 +23,11 @@ public final class VaporFormsProvider: Provider {
         try routes(router)
         services.register(router, as: Router.self)
 
-        try services.register(LeafProvider())
-//        services.prefer(LeafRenderer.self, for: ViewRenderer.self)
+        var tags = LeafTagConfig.default()
+        tags.use(FormTag(), as: "Form")
+        tags.use(EndFormTag(), as: "EndForm")
+
+        services.register(tags)
     }
 
     /// See Service.Provider.boot

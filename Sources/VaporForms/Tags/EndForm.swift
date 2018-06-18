@@ -7,10 +7,10 @@
 
 import Async
 import Leaf
-import Vapor
-import Fluent
 
 public final class EndFormTag: TagRenderer {
+    public init() {}
+
     public func render(tag: TagContext) throws -> EventLoopFuture<TemplateData> {
         let html = "</form>"
 
