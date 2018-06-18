@@ -10,6 +10,6 @@ import Vapor
 
 final class ExampleController {
     func index(_ request: Request) throws -> Future<View> {
-        return try request.view().render("Vanilla/index")
+        return try request.view().render("./Vanilla/index")
     }
 }
